@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url(../navbarFooterStyle.css);
+
+
+
+  .section1 {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  .section1:hover{
+    color: black;
+    font-weight: bold;
+    opacity: .9;
+  }
+  
+  .section1 video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  .section1 .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .section1 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: grey;
+    opacity: 0.5;
+    z-index: 1;
+  }
+  
+  .section3 ,.section4, .section5 , .section6, .section7, .section8, .section9,.section10{
+    font-family: Amiri;
+  }
+  .section3:hover, .section5:hover , .section7:hover,.section10:hover{
+    filter: invert(1);
+  }
+
+  .section4:hover, .section6:hover, .section8:hover, .section9:hover{
+    filter: invert(.25);
+  }
+  
+
+  .section3{
+    background: url(./MeknesPage/Volubilis.jpg) no-repeat scroll center center/cover;
+  }
+  .section4{
+    background: url(./MeknesPage/moulay\ idriss\ city.jpg) no-repeat fixed center center/cover;
+  }
+  .section5{
+    background: url(./MeknesPage/bab\ elmansour.jpg) no-repeat scroll center center/cover;
+  }
+
+  .section6{
+    background: url(./MeknesPage/mausoleum\ of\ Moulay\ Ismail.jpg) no-repeat fixed center center/cover;
+  }
+
+  .section7{
+    background: url(./MeknesPage/old-medina-meknes.jpg) no-repeat scroll center center/cover;
+  }
+
+  .section8{
+    background: url(./MeknesPage/eden-meknes.jpg) no-repeat fixed center center/cover;
+  }
+
+  .section9{
+    background: url(./MeknesPage/dar\ Jamai.jpg) no-repeat fixed center center/cover;
+  }
+
+  .section10{
+    background: url(./MeknesPage/heri\ souani.jpg) no-repeat fixed center center/cover;
+  }
+
+
+  /* Media Query for devices withi coarse pointers and no hover functionality */
+  
+  /* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+  
+  @media (pointer: coarse) and (hover: none) {
+    .section1 {
+      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+  
+    .section1 video {
+      display: none;
+    }
+  }
